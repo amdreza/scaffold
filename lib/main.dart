@@ -18,9 +18,42 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.comment),
           bottom: PreferredSize(
             child: Text('Jafarian'),
-            preferredSize: Size.fromHeight(50),
+            preferredSize: Size.fromHeight(2),
           ),
-          elevation: 50.0,
+          elevation: 90.0,
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.orange,
+          onPressed: null,
+          child: Text('Tab'),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          fixedColor: Colors.orangeAccent,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.comment),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.comment),
+              label: 'Comments',
+            ),
+          ],
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('Header '),
+                decoration: BoxDecoration(color: Colors.green),
+              ),
+              Text('data'),
+              Text('data'),
+              Text('data'),
+              Text('data'),
+              Text('data'),
+            ],
+          ),
         ),
       ),
     );
