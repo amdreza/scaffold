@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        body: Text('data'),
+        // body: SafeArea(child: Title(color: Colors.black, child: Text('data'))),
         appBar: AppBar(
           backgroundColor: Colors.amberAccent,
           title: Text('amddreza'),
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               DrawerHeader(
                 child: Text('Header '),
-                decoration: BoxDecoration(color: Colors.green),
+                decoration: BoxDecoration(color: Colors.lightBlue),
               ),
               Text('data'),
               Text('data'),
@@ -56,6 +58,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      // title: 'mehdi',
     );
   }
 }
